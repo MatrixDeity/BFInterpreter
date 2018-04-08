@@ -3,12 +3,13 @@
 #include "errors.h"
 
 static const char* errors[] = {
-    "",
-    "Undefined error!",
-    "You passed too much instructions into the interpreter!",
-    "One or more of your cycles is incorrect! (maybe you are just too stupid for BrainFuck...)",
-    "The passed file is damaged or not existing!"
+    [ERR_UNDEFINED]             = "Undefined error!",
+    [ERR_TOO_MUCH_INSTRUCTIONS] = "You passed too much instructions into the interpreter!",
+    [ERR_INCORRECT_CYCLE]       = "One or more of your cycles is incorrect! "
+                                  "(maybe you are just too stupid for BrainFuck...)",
+    [ERR_BAD_FILE]              = "The passed file is damaged or not existing!"
 };
+static const int err_num = sizeof(errors) / sizeof(errors[0]);
 
 void throw_error(error_t err) {
     const char* err_desc = get_error_description(err);
@@ -17,7 +18,7 @@ void throw_error(error_t err) {
 }
 
 const char* get_error_description(error_t err) {
-    if (err <= ERR_UNDEFINED || err >= sizeof(errors) / sizeof(errors[0])) {
+    if (err <= ERR_UNDEFINED || err >= err_num) {
         return errors[ERR_UNDEFINED];
     }
     return errors[err];
