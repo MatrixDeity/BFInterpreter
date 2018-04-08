@@ -13,7 +13,7 @@ To run the first mode you need to pass the path to source file to the interprete
 ./BFInterpreter hello_world.bf
 ```
 
-Or you can run interactive mode by command without parameters:
+Or you can run the interactive mode by the command without parameters:
 
 ```bash
 ./BFInterpreter
@@ -24,6 +24,14 @@ Written by MatrixDeity, 2018.
 ## Dependencies
 
 This implementation don't has some special dependencies.
+
+## Examples
+
+### HelloWorld
+
+```bush
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+```
 
 ## Links
 
