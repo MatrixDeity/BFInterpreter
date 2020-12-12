@@ -10,20 +10,20 @@ This is the free implementation of the BrainFuck programming language written in
 To run the first mode you need to pass the path to source file to the interpreter. For example:
 
 ```bush
-./BFInterpreter hello_world.bf
+./bfi hello_world.bf
 ```
 
 Or you can run the interactive mode by the command without parameters:
 
 ```bash
-./BFInterpreter
+./bfi
 ```
 
-Written by MatrixDeity, 2018.
+Written by MatrixDeity, 2018-2020.
 
 ## Dependencies
 
-This implementation don't has some special dependencies.
+This implementation doesn't have some special dependencies.
 
 ## Examples
 

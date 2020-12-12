@@ -54,6 +54,8 @@ void process_file(const char* path) {
 }
 
 void process_lines() {
+    printf("Welcome to BrainFuck Interpreter!\n");
+    printf("By MatrixDeity, 2018-2020.\n");
     while (true) {
         printf("$ ");
         load_instructions(stdin, NL);

@@ -1,7 +1,7 @@
 #ifndef ERRORS_H
 #define ERRORS_H
 
-typedef enum {
+typedef enum _error_t {
     ERR_UNDEFINED               = 0x1,
     ERR_TOO_MUCH_INSTRUCTIONS   = 0x2,
     ERR_INCORRECT_CYCLE         = 0x3,
